@@ -2,7 +2,7 @@
 
 GitPulse is a full-stack web application and automated bot designed to handle event-driven repository workflows. It securely intercepts GitHub webhook events (e.g., issues, pull requests), runs custom trigger matching engine rules, queries Google Gemini AI for automated triage, and alerts your Slack workspace.
 
-## 🚀 Key Features
+##  Key Features
 
 1. **Dashboard & UI**: Sleek glassmorphic dashboard showcasing real-time webhook event logs, detailed execution tracking (success/failure details), and simple inline rules builder interface.
 2. **AI Code Triage (Gemini)**: Integrates Gemini AI to automatically summarize issues/PRs, assess importance levels, and suggest relevant routing labels.
@@ -14,7 +14,7 @@ GitPulse is a full-stack web application and automated bot designed to handle ev
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - **Frontend & APIs**: Next.js 14 (App Router) + TypeScript
 - **Database & Auth**: Supabase (Postgres)
 - **AI Model**: Google Gemini 1.5 Flash (via Google AI Studio)
@@ -22,7 +22,7 @@ GitPulse is a full-stack web application and automated bot designed to handle ev
 
 ---
 
-## ⚙️ Environment Variables (`.env`)
+##  Environment Variables (`.env`)
 
 Create a `.env` or `.env.local` file in the root directory:
 
@@ -44,13 +44,13 @@ GEMINI_API_KEY=your_gemini_api_key_here
 
 ---
 
-## 🗄️ Database Setup
+##  Database Setup
 
 Run the SQL migration script found in [`schema.sql`](file:///schema.sql) in your Supabase SQL Editor. This will configure the required tables (`installations`, `rules`, `events_log`, and `actions_log`) and enable Row-Level Security (RLS) policies.
 
 ---
 
-## 💻 Running Locally
+##  Running Locally
 
 1. Install dependencies:
    ```bash
@@ -67,7 +67,7 @@ Run the SQL migration script found in [`schema.sql`](file:///schema.sql) in your
 
 ---
 
-## 🧪 Webhook Endpoints & Testing
+##  Webhook Endpoints & Testing
 
 - Webhook Endpoint: `POST http://localhost:3000/api/webhook`
 
