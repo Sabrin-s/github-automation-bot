@@ -2,6 +2,9 @@
 
 GitPulse is a full-stack web application and automated bot designed to handle event-driven repository workflows. It securely intercepts GitHub webhook events (e.g., issues, pull requests), runs custom trigger matching engine rules, queries Google Gemini AI for automated triage, and alerts your Slack workspace.
 
+#Deploy Link
+#https://github-automation-bot-gamma.vercel.app/
+
 ##  Key Features
 
 1. **Dashboard & UI**: Sleek glassmorphic dashboard showcasing real-time webhook event logs, detailed execution tracking (success/failure details), and simple inline rules builder interface.
