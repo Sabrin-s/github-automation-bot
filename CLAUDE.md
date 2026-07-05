@@ -2,7 +2,7 @@
 
 This file contains build commands, environment configurations, and formatting standards for GitPulse.
 
-## 🛠️ CLI Commands
+##  CLI Commands
 
 ### Build & Run
 - **Start local development server**: `npm run dev`
@@ -15,7 +15,7 @@ This file contains build commands, environment configurations, and formatting st
 ### Local Testing
 - **Trigger mock webhook events**: `node scratch/test-webhook.js`
 
-## ⚙️ Environment Variables
+##  Environment Variables
 Ensure the following keys are populated in your `.env` or `.env.local` file:
 - `NEXT_PUBLIC_SUPABASE_URL`
 - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
@@ -26,7 +26,7 @@ Ensure the following keys are populated in your `.env` or `.env.local` file:
 - `SLACK_WEBHOOK_URL`
 - `GEMINI_API_KEY`
 
-## 📝 Code Formatting Guidelines
+##  Code Formatting Guidelines
 - **Imports**: Separate third-party dependencies from local utility libraries. Always place React core imports first.
 - **TypeScript**: Always enable strict typing (`"strict": true`). Avoid the use of `any` types where possible.
 - **Routing**: Follow Next.js App Router conventions. API endpoints must live in `app/api/.../route.ts` folders.
