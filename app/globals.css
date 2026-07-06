@@ -233,3 +233,14 @@ p {
   border-color: hsla(263, 90%, 60%, 0.6) !important;
 }
 
+/* Click pulse flash on cursor dot */
+.custom-cursor-dot.cursor-click {
+  width: 18px !important;
+  height: 18px !important;
+  background: linear-gradient(135deg, hsl(263, 90%, 80%), hsl(45, 100%, 70%)) !important;
+  box-shadow: 
+    0 0 20px hsla(263, 90%, 70%, 1), 
+    0 0 40px hsla(217, 91%, 60%, 0.6),
+    0 0 60px hsla(45, 100%, 60%, 0.3) !important;
+}
+
