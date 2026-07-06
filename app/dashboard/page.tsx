@@ -288,11 +288,13 @@ export default function DashboardPage() {
         const { data: { user } } = await supabase.auth.getUser();
         if (user) {
           console.log('Seeding default installation record for user:', user.email);
+          // Generate a random unique github_installation_id to prevent unique constraint conflicts
+          const randomInstallationId = Math.floor(Math.random() * 900000000) + 100000000;
           const { data: newInst, error: insertError } = await supabase
             .from('installations')
             .insert({
               user_id: user.id,
-              github_installation_id: 12345678, // default mock installation ID
+              github_installation_id: randomInstallationId,
               repository_name: 'octocat/hello-world'
             })
             .select('id');
