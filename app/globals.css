@@ -205,3 +205,31 @@ p {
 .pulse {
   animation: pulseGlow 2s infinite ease-in-out;
 }
+
+/* ===== Animated Custom Cursor ===== */
+
+/* Hide the default cursor on desktop */
+@media (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+}
+
+/* Cursor dot expands on hover over interactive elements */
+.custom-cursor-dot.cursor-hover {
+  width: 14px !important;
+  height: 14px !important;
+  background: linear-gradient(135deg, hsl(263, 90%, 70%), hsl(217, 91%, 70%)) !important;
+  box-shadow: 
+    0 0 14px hsla(263, 90%, 60%, 0.8), 
+    0 0 30px hsla(263, 90%, 60%, 0.4),
+    0 0 60px hsla(217, 91%, 60%, 0.2) !important;
+}
+
+/* Trail ring expands and brightens on hover */
+.custom-cursor-trail.trail-hover {
+  width: 50px !important;
+  height: 50px !important;
+  border-color: hsla(263, 90%, 60%, 0.6) !important;
+}
+
